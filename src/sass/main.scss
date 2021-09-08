@@ -1,1 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.gallery {
+}
+
+.photo-card {
+  display: inline-grid;
+  width: 360px;
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid #eee;
+  background: white;
+  font-family: 'Open Sans';
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+
+.photo_card-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: 1s ease-in-out;
+}
+
+.photo_card-img:hover {
+  transform: scale(1.1);
+}
+
+.stats {
+  display: block;
+}
+
+.material-icons {
+  margin-right: 6px;
+  color: #e34d38;
+}
+
+.stats-item {
+  display: inline-flex;
+  font-weight: 700;
+  color: #39404b;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: #b7ffb7;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.back_to_top:hover {
+  background: #0c7923;
+}
+
+.back_to_top-show {
+  display: block;
+}
